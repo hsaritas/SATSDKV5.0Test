@@ -1,0 +1,70 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PlatformTarget>x64</PlatformTarget>
+    <Platforms>AnyCPU;x64</Platforms>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;8604;8602;0168;8600;MSB3245</NoWarn>
+    <WarningLevel>3</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;8604;8602;0168;8600;MSB3245</NoWarn>
+    <WarningLevel>3</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <NoWarn>1701;1702;8604;8602;0168;8600;MSB3245</NoWarn>
+    <WarningLevel>3</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <NoWarn>1701;1702;8604;8602;0168;8600;MSB3245</NoWarn>
+    <WarningLevel>3</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>bin\x64\Debug\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>bin\x64\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OMSp_ASOM">
+      <HintPath>bin\x64\Debug\OMSp_ASOM.dll</HintPath>
+    </Reference>
+    <Reference Include="OMSp_managed_linux">
+      <HintPath>bin\x64\Debug\OMSp_managed_linux.dll</HintPath>
+    </Reference>
+    <Reference Include="SIMATICAutomationToolAPI">
+      <HintPath>bin\x64\Debug\SIMATICAutomationToolAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="SIMATICAutomationToolAPITrial">
+      <HintPath>bin\x64\Debug\SIMATICAutomationToolAPITrial.dll</HintPath>
+    </Reference>
+    <Reference Include="SIMATICAutomationToolOSLCommon">
+      <HintPath>bin\x64\Debug\SIMATICAutomationToolOSLCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="SIMATICAutomationToolOSLWindows">
+      <HintPath>bin\x64\Debug\SIMATICAutomationToolOSLWindows.dll</HintPath>
+    </Reference>
+    <Reference Include="SnmpSharpNet">
+      <HintPath>bin\x64\Debug\SnmpSharpNet.dll</HintPath>
+    </Reference>
+    <Reference Include="SIMATICAutomationToolOSLLinux">
+      <HintPath>bin\x64\Debug\SIMATICAutomationToolOSLLinux.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
